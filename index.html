@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Booki | Trouverez votre hébergement pour des vacances de rêve</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Kirill Derevenski">
+    <meta name="description"
+          content="Project 2 of the OpenClassroom's Développeur d'application - JavaScript React path">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <script src="https://kit.fontawesome.com/73f9c930af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Page container-->
+<div id="container">
+
+    <!--Header-->
+    <header>
+        <a href="#"><img id="logo" src="./images/logo/Booki.png" alt="Booki's logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Hébergement</a></li>
+                <li><a href="#">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Search - Filters-->
+    <section id="search-filters">
+
+        <!--Section heading-->
+        <div id="search-filters-heading">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <!--Search form-->
+        <form id="search-filters-form" action="#">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit"></button>
+        </form>
+
+        <!--Filters-->
+        <div id="search-filters-filters">
+            <h3>Filtres</h3>
+            <div id="search-filters-filters-economique">
+                <i class="fas fa-money-bill-wave"></i>
+                <button>Economique</button>
+            </div>
+            <div id="search-filters-filters-familial">
+                <i class="fas fa-child"></i>
+                <button>Familial</button>
+            </div>
+            <div id="search-filters-filters-romantique">
+                <i class="fas fa-heart"></i>
+                <button>Romantique</button>
+            </div>
+            <div id="search-filters-filters-animaux">
+                <i class="fas fa-dog"></i>
+                <button>Animaux autorisés</button>
+            </div>
+        </div>
+
+        <!--Info-->
+        <div id="search-filters-info">
+            <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer-a-propos">
+            <h3>A propos</h3>
+            <p><a href="#">Fonctionnement du site</a></p>
+            <p><a href="#">Conditions générales de vente</a></p>
+            <p><a href="#">Données et confidentialité</a></p>
+        </div>
+        <div id="footer-nos-hebergements">
+            <h3>Nos hebergements</h3>
+            <p><a href="#">Charte qualité</a></p>
+            <p><a href="#">Soumettre votre hôtel</a></p>
+        </div>
+        <div id="footer-assistance">
+            <h3>Assistance</h3>
+            <p><a href="#">Centre d'aide</a></p>
+            <p><a href="#">Nous contacter</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
