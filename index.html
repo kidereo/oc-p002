@@ -21,7 +21,7 @@
 <body>
 
 <!--Page container-->
-<div id="container">
+<div id="container" class="container">
 
     <!--Header-->
     <header>
@@ -35,7 +35,7 @@
     </header>
 
     <!--Search - Filters-->
-    <section id="search-filters">
+    <section id="search-filters" class="margin-top-50 margin-bottom-50">
 
         <!--Section heading-->
         <div id="search-filters-heading">
@@ -44,41 +44,45 @@
         </div>
 
         <!--Search form-->
-        <form id="search-filters-form" action="#">
-            <i class="fas fa-map-marker-alt"></i>
+        <form id="search-filters-form" class="search-form margin-top-50" action="#">
+            <i class="fas fa-map-marker-alt background-color-grey"></i>
             <input type="text" placeholder="Search..." name="search">
             <button type="submit"></button>
         </form>
 
         <!--Filters-->
-        <div id="search-filters-filters">
+        <div id="search-filters-filters" class="margin-bottom-50 margin-top-50">
             <h3>Filtres</h3>
             <div id="search-filters-filters-economique">
-                <i class="fas fa-money-bill-wave"></i>
-                <button>Economique</button>
+                <i class="fas fa-money-bill-wave blue background-color-light-blue"></i>
+                <button class="background-color-white">Economique</button>
             </div>
             <div id="search-filters-filters-familial">
-                <i class="fas fa-child"></i>
-                <button>Familial</button>
+                <i class="fas fa-child blue background-color-light-blue"></i>
+                <button class="background-color-white">Familial</button>
             </div>
             <div id="search-filters-filters-romantique">
-                <i class="fas fa-heart"></i>
-                <button>Romantique</button>
+                <i class="fas fa-heart blue background-color-light-blue"></i>
+                <button class="background-color-white">Romantique</button>
             </div>
             <div id="search-filters-filters-animaux">
-                <i class="fas fa-dog"></i>
-                <button>Animaux autorisés</button>
+                <i class="fas fa-dog blue background-color-light-blue"></i>
+                <button class="background-color-white">Animaux autorisés</button>
             </div>
         </div>
 
         <!--Info-->
-        <div id="search-filters-info">
-            <i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville
+        <div id="search-filters-info" class="margin-top-50 margin-bottom-50">
+            <i class="fas fa-info blue"></i>Plus de 500 logements sont disponibles dans cette ville
         </div>
     </section>
 
+    <!--Main section with cards-->
+    <main>
 
-    <footer>
+    </main>
+
+    <footer class="background-color-grey">
         <div id="footer-a-propos">
             <h3>A propos</h3>
             <p><a href="#">Fonctionnement du site</a></p>
