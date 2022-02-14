@@ -25,10 +25,10 @@
 
     <!--Header-->
     <header>
-        <a href="#"><img id="logo" src="./images/logo/Booki.png" alt="Booki's logo"></a>
+        <a href="#"><img id="logo" src="./images/logo/Booki.png" alt="Booki logo"></a>
         <nav>
             <ul>
-                <li><a href="#">Hébergement</a></li>
+                <li><a href="#hebergements-populaires">Hébergement</a></li>
                 <li><a href="#">Activités</a></li>
             </ul>
         </nav>
@@ -73,16 +73,101 @@
 
         <!--Info-->
         <div id="search-filters-info" class="margin-top-50 margin-bottom-50">
-            <i class="fas fa-info blue"></i>Plus de 500 logements sont disponibles dans cette ville
+            <i class="fas fa-info blue"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
     <!--Main section with cards-->
     <main>
+        <div id="hebergements-populaires" class="margin-bottom-50">
+            <section id="hebergements-populaires-hebergements" class="background-color-grey border-radius-15">
+                <h2>Hébergements à Marseille</h2>
+                <div id="hebergements-populaires-hebergements-articles">
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                 alt="Auberge La Cannebiere">
+                            <h3>Auberge La Cannebiere</h3>
+                            <p>Nuit à partir de <span>25€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </a>
+                    </article>
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                 alt="Hotel du port">
+                            <h3>Hotel du port</h3>
+                            <p>Nuit à partir de <span>52€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </a>
+                    </article>
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                 alt="Hotel Les mouettes">
+                            <h3>Hotel Les mouettes</h3>
+                            <p>Nuit à partir de <span>76€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </a>
+                    </article>
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                 alt="Hotel de la mer">
+                            <h3>Hotel de la mer</h3>
+                            <p>Nuit à partir de <span>46€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i>
+                        </a>
+                    </article>
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                 alt="Auberge Le Panier">
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de <span>23€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                        </a>
+                    </article>
+
+                    <article class="background-color-white border-radius-15 hebergement-card">
+                        <a href="#">
+                            <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                 alt="Auberge La Cannebiere">
+                            <h3>Hotel chez Amina</h3>
+                            <p>Nuit à partir de <span>96€</span></p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </a>
+                    </article>
+                </div>
+
+                <button class="background-color-white">Afficher plus</button>
+
+            </section>
+
+            <aside id="hebergements-populaires-populaires" class="background-color-grey border-radius-15">
+                <div id="hebergements-populaires-populaires-heading">
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </aside>
+
+        </div>
 
     </main>
 
-    <footer class="background-color-grey">
+    <footer class="background-color-grey border-radius-15">
         <div id="footer-a-propos">
             <h3>A propos</h3>
             <p><a href="#">Fonctionnement du site</a></p>
@@ -100,6 +185,15 @@
             <p><a href="#">Nous contacter</a></p>
         </div>
     </footer>
+
+    <!--W3C CSS validation badge-->
+    <p id="w3c-css-badge" class="margin-top-50">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                 alt="Valid CSS!"/>
+        </a>
+    </p>
 </div>
 </body>
 
