@@ -194,7 +194,7 @@ nav a:hover {
 }
 
 /* Main */
-
+/* Hebergements and Populaires sections */
 #hebergements-populaires {
     display: flex;
     justify-content: space-between;
@@ -211,7 +211,7 @@ nav a:hover {
 }
 
 #hebergements-populaires-hebergements article {
-    padding: 10px;
+    padding: 5px;
     width: 30%;
     box-shadow: 0 0 10px lightgray;
     line-height: 25px;
@@ -266,7 +266,7 @@ nav a:hover {
 }
 
 #hebergements-populaires-populaires article {
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 0 10px lightgray;
     line-height: 25px;
     margin-bottom: 20px;
@@ -298,6 +298,78 @@ nav a:hover {
     bottom: 15px;
 }
 
+/* Activites section */
+#activites-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+#activites article {
+    padding: 5px;
+    box-shadow: 0 0 10px lightgray;
+    margin: 0 10px 10px 10px;
+}
+
+#activites article:hover {
+    box-shadow: 0 0 10px #0065FC;
+    color: #0065FC;
+}
+
+#activites a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#activites-card-1 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+#activites-card-2 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activites-card-3 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activites-card-4 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activites-card-5 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activites-card-6 img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#activites h3 {
+    padding: 20px;
+}
 
 /* Footer */
 footer {
@@ -486,6 +558,13 @@ footer a:hover {
         object-fit: cover;
     }
 
+    #activites-cards {
+        flex-direction: column;
+    }
+
+    #activites img {
+        height: 200px;
+    }
 
     /* Style footer */
     footer {
