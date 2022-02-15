@@ -228,6 +228,7 @@ nav a:hover {
     border-top-right-radius: 15px;
     width: 100%;
     height: 130px;
+    object-fit: cover;
 }
 
 #hebergements-populaires-hebergements-articles {
@@ -241,7 +242,7 @@ nav a:hover {
 }
 
 #hebergements-populaires-hebergements button {
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     font-weight: 600;
     border: 1px solid lightgray;
     border-radius: 20px;
@@ -264,7 +265,38 @@ nav a:hover {
     align-items: center;
 }
 
+#hebergements-populaires-populaires article {
+    padding: 10px;
+    box-shadow: 0 0 10px lightgray;
+    line-height: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
 
+#hebergements-populaires-populaires article:hover {
+    box-shadow: 0 0 10px #0065FC;
+    color: #0065FC;
+}
+
+#hebergements-populaires-populaires img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 150px;
+    width: 40%;
+    object-fit: cover;
+}
+
+.populaires-card {
+    float: right;
+    width: 55%;
+}
+
+.align-bottom {
+    position: absolute;
+    bottom: 15px;
+}
 
 
 /* Footer */
@@ -336,6 +368,11 @@ footer a:hover {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
+
+    .container {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     /* Header */
     header {
@@ -421,8 +458,41 @@ footer a:hover {
         border: 2px solid #0065FC;
     }
 
+    /* Style Hebergements and Populars */
+    #hebergements-populaires {
+        flex-direction: column-reverse;
+    }
+
+    #hebergements-populaires-hebergements {
+        width: 100%;
+        background-color: white;
+    }
+
+    #hebergements-populaires-hebergements-articles {
+        flex-direction: column;
+    }
+
+    #hebergements-populaires-populaires {
+        width: 100%;
+    }
+
+    #hebergements-populaires-hebergements article {
+        width: 100%;
+    }
+
+    #hebergements-populaires-populaires img {
+        height: 150px;
+        width: 100px;
+        object-fit: cover;
+    }
+
+
     /* Style footer */
     footer {
         flex-direction: column;
+    }
+
+    footer div {
+        margin-bottom: 25px;
     }
 }
