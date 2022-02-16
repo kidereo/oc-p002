@@ -299,7 +299,7 @@ nav a:hover {
 }
 
 /* Activites section */
-#activites-cards {
+#activites-cards-container {
     display: flex;
     justify-content: space-between;
 }
@@ -307,7 +307,7 @@ nav a:hover {
 #activites article {
     padding: 5px;
     box-shadow: 0 0 10px lightgray;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 0 10px;
 }
 
 #activites article:hover {
@@ -320,49 +320,29 @@ nav a:hover {
     color: inherit;
 }
 
-#activites-card-1 img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+.activites-cards-area {
+    height: 500px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
-#activites-card-2 img {
+
+.activites-card {
+    flex: 0 1 50%;
+}
+
+.activites-image-large {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 100px;
+    height: 410px;
     width: 100%;
     object-fit: cover;
 }
 
-#activites-card-3 img {
+.activites-image-small {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
-}
-
-#activites-card-4 img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-#activites-card-5 img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 100px;
-    width: 100%;
-    object-fit: cover;
-}
-
-#activites-card-6 img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 100px;
+    height: 140px;
     width: 100%;
     object-fit: cover;
 }
@@ -558,8 +538,24 @@ footer a:hover {
         object-fit: cover;
     }
 
-    #activites-cards {
+    /* Style Activites section */
+    #activites-cards-container {
         flex-direction: column;
+    }
+
+    .activites-cards-area {
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+    }
+
+    .activites-card {
+        flex: 0 1 50%;
+    }
+
+    #activites-cards-container article {
+        margin-bottom: 25px;
     }
 
     #activites img {
